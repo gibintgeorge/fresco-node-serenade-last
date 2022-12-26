@@ -1,10 +1,12 @@
 var Sails = require("sails");
 var Barrels = require("barrels");
+global.chai = require("chai");
+
+global.should = chai.should();
+
 require("should");
 
-// Global before hook
 before(function (done) {
-  // Lift Sails with test database
   Sails.lift(
     {
       log: {
@@ -17,32 +19,23 @@ before(function (done) {
     },
     function (err, sails) {
       if (err) return done(err);
-
-      // Load fixtures
-      var barrels = new Barrels();
-
-      // Save original objects in `fixtures` variable
-      fixtures = barrels.data;
-
-      // Populate the DB
-      // barrels.populate(
-      //   // ["variant", "segment", "manufacturer", "car"],
-      //   function (err) {
-      //     if (err) {
-      //       console.error(error);
-      //       done(err);
-      //     } else {
-      //       done();
-      //     }
-      //   }
-      // );
-      barrels.populate();
+      else {
+        var barrels = new Barrels();
+        fixtures = barrels.data;
+        barrels.populate(
+          ["variant", "segment", "manufacturer", "car"],
+          function (err) {
+            return done(err, sails);
+          },
+          true
+        );
+      }
     }
   );
 });
 
 // Global after hook
 after(function (done) {
-  console.log(); // Skip a line before displaying Sails lowering logs
-  sails.lower(done);
+  console.log();
+  Sails.lower(done);
 });

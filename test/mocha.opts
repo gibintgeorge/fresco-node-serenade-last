@@ -3,5 +3,5 @@
 --recursive
 --ui bdd
 --globals sails
---timeout 5s
+--timeout 10s
 --slow 2000
