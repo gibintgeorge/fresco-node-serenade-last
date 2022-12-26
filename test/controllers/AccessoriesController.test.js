@@ -1,7 +1,4 @@
 var supertest = require("supertest");
-var assert = require("assert");
-
-var createdSegment;
 require("../bootstrap.test");
 
 var accessories = require("../fixtures/Accessories.json");

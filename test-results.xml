@@ -1,63 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.2540" tests="10" failures="3">
-  <testsuite name="Root Suite" timestamp="2022-12-26T13:20:26" tests="0" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:28" tests="6" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\AccessoriesController.test.js" time="0.1310" failures="3">
-    <testcase name="Accessories Controller get /accessories" time="0.0500" classname="get /accessories">
-    </testcase>
-    <testcase name="Accessories Controller post /accessories" time="0.0530" classname="post /accessories">
-    </testcase>
-    <testcase name="Accessories Controller put /accessories" time="0.0130" classname="put /accessories">
-    </testcase>
-    <testcase name="Accessories Controller delete /accessories" time="0.0000" classname="delete /accessories">
-      <failure message="Cannot read properties of undefined (reading &apos;should&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'should')
-    at Test.<anonymous> (test\controllers\AccessoriesController.test.js:68:30)
-    at Test.assert (node_modules\supertest\lib\test.js:179:6)
-    at Server.assert (node_modules\supertest\lib\test.js:131:12)
-    at Object.onceWrapper (node:events:627:28)
-    at Server.emit (node:events:513:28)
-    at Server.emit (node:domain:489:12)
-    at emitCloseNT (node:net:1880:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
-    </testcase>
-    <testcase name="Accessories Controller deleteAll /accessories" time="0.0000" classname="deleteAll /accessories">
-      <failure message="Cannot read properties of undefined (reading &apos;should&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'should')
-    at Test.<anonymous> (test\controllers\AccessoriesController.test.js:84:30)
-    at Test.assert (node_modules\supertest\lib\test.js:179:6)
-    at Server.assert (node_modules\supertest\lib\test.js:131:12)
-    at Object.onceWrapper (node:events:627:28)
-    at Server.emit (node:events:513:28)
-    at Server.emit (node:domain:489:12)
-    at emitCloseNT (node:net:1880:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
-    </testcase>
-    <testcase name="Accessories Controller search /accessories" time="0.0150" classname="search /accessories">
-      <failure message="expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;" type="Error"><![CDATA[Error: expected 200 "OK", got 404 "Not Found"
-    at Test._assertStatus (node_modules\supertest\lib\test.js:266:12)
-    at Test._assertFunction (node_modules\supertest\lib\test.js:281:11)
-    at Test.assert (node_modules\supertest\lib\test.js:171:18)
-    at Server.assert (node_modules\supertest\lib\test.js:131:12)
-    at Object.onceWrapper (node:events:627:28)
-    at Server.emit (node:events:513:28)
-    at Server.emit (node:domain:489:12)
-    at emitCloseNT (node:net:1880:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\CarsController.test.js" time="0.0310" failures="0">
-    <testcase name="Accessories Controller get /car" time="0.0310" classname="get /car">
-    </testcase>
-  </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\ManufacturerController.test.js" time="0.0300" failures="0">
-    <testcase name="Accessories Controller get /manufacturer" time="0.0300" classname="get /manufacturer">
-    </testcase>
-  </testsuite>
-  <testsuite name="Segment Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\SegmentController.test.js" time="0.0320" failures="0">
-    <testcase name="Segment Controller get /segment" time="0.0320" classname="get /segment">
-    </testcase>
-  </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\VarientController.test.js" time="0.0300" failures="0">
-    <testcase name="Accessories Controller get /variant" time="0.0300" classname="get /variant">
+<testsuites name="Mocha Tests" time="0.0000" tests="0" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-12-26T16:49:45" tests="0" time="0.0000" failures="1">
+    <testcase name="&quot;before all&quot; hook" time="0.0000" classname="&quot;before all&quot; hook">
+      <failure message="Cannot read properties of undefined (reading &apos;0&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading '0')
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\barrels\index.js:88:51
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\async\lib\async.js:181:20
+    at async.forEachOf.async.eachOf (node_modules\async\lib\async.js:233:13)
+    at async.forEach.async.each (node_modules\async\lib\async.js:209:22)
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\barrels\index.js:77:17
+    at wrapper (node_modules\waterline\node_modules\lodash\index.js:3592:19)
+    at applyInOriginalCtx (node_modules\waterline\lib\waterline\utils\normalize.js:421:80)
+    at wrappedCallback (node_modules\waterline\lib\waterline\utils\normalize.js:324:18)
+    at success (node_modules\waterline\node_modules\switchback\lib\normalize.js:33:31)
+    at _switch (node_modules\waterline\node_modules\switchback\lib\factory.js:58:28)
+    at returnResults (node_modules\waterline\lib\waterline\query\finders\basic.js:179:9)
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\query\finders\basic.js:86:16
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\query\finders\operations.js:83:7
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\node_modules\async\lib\async.js:52:16
+    at async.forEachOf.async.eachOf (node_modules\waterline\node_modules\async\lib\async.js:236:30)
+    at async.forEach.async.each (node_modules\waterline\node_modules\async\lib\async.js:209:22)
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\query\finders\operations.js:436:11
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\query\finders\operations.js:574:5
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\node_modules\async\lib\async.js:52:16
+    at async.forEachOf.async.eachOf (node_modules\waterline\node_modules\async\lib\async.js:236:30)
+    at async.forEach.async.each (node_modules\waterline\node_modules\async\lib\async.js:209:22)
+    at module.exports._buildChildOpts (node_modules\waterline\lib\waterline\query\finders\operations.js:464:9)
+    at module.exports._execChildOpts (node_modules\waterline\lib\waterline\query\finders\operations.js:432:8)
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\query\finders\operations.js:81:10
+    at wrapper (node_modules\waterline\node_modules\lodash\index.js:3592:19)
+    at applyInOriginalCtx (node_modules\waterline\lib\waterline\utils\normalize.js:421:80)
+    at wrappedCallback (node_modules\waterline\lib\waterline\utils\normalize.js:324:18)
+    at success (node_modules\waterline\node_modules\switchback\lib\normalize.js:33:31)
+    at _switch (node_modules\waterline\node_modules\switchback\lib\factory.js:58:28)
+    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\adapter\dql.js:166:7
+    at wrapper (node_modules\waterline\node_modules\lodash\index.js:3592:19)
+    at applyInOriginalCtx (node_modules\waterline\lib\waterline\utils\normalize.js:421:80)
+    at wrappedCallback (node_modules\waterline\lib\waterline\utils\normalize.js:324:18)
+    at success (node_modules\waterline\node_modules\switchback\lib\normalize.js:33:31)
+    at _switch (node_modules\waterline\node_modules\switchback\lib\factory.js:58:28)
+    at Timeout._onTimeout (node_modules\sails-memory\lib\database.js:219:5)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>
