@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.2540" tests="10" failures="3">
+  <testsuite name="Root Suite" timestamp="2022-12-26T13:20:26" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:28" tests="6" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\AccessoriesController.test.js" time="0.1310" failures="3">
+    <testcase name="Accessories Controller get /accessories" time="0.0500" classname="get /accessories">
+    </testcase>
+    <testcase name="Accessories Controller post /accessories" time="0.0530" classname="post /accessories">
+    </testcase>
+    <testcase name="Accessories Controller put /accessories" time="0.0130" classname="put /accessories">
+    </testcase>
+    <testcase name="Accessories Controller delete /accessories" time="0.0000" classname="delete /accessories">
+      <failure message="Cannot read properties of undefined (reading &apos;should&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'should')
+    at Test.<anonymous> (test\controllers\AccessoriesController.test.js:68:30)
+    at Test.assert (node_modules\supertest\lib\test.js:179:6)
+    at Server.assert (node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at Server.emit (node:domain:489:12)
+    at emitCloseNT (node:net:1880:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testcase>
+    <testcase name="Accessories Controller deleteAll /accessories" time="0.0000" classname="deleteAll /accessories">
+      <failure message="Cannot read properties of undefined (reading &apos;should&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'should')
+    at Test.<anonymous> (test\controllers\AccessoriesController.test.js:84:30)
+    at Test.assert (node_modules\supertest\lib\test.js:179:6)
+    at Server.assert (node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at Server.emit (node:domain:489:12)
+    at emitCloseNT (node:net:1880:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testcase>
+    <testcase name="Accessories Controller search /accessories" time="0.0150" classname="search /accessories">
+      <failure message="expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;" type="Error"><![CDATA[Error: expected 200 "OK", got 404 "Not Found"
+    at Test._assertStatus (node_modules\supertest\lib\test.js:266:12)
+    at Test._assertFunction (node_modules\supertest\lib\test.js:281:11)
+    at Test.assert (node_modules\supertest\lib\test.js:171:18)
+    at Server.assert (node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:627:28)
+    at Server.emit (node:events:513:28)
+    at Server.emit (node:domain:489:12)
+    at emitCloseNT (node:net:1880:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\CarsController.test.js" time="0.0310" failures="0">
+    <testcase name="Accessories Controller get /car" time="0.0310" classname="get /car">
+    </testcase>
+  </testsuite>
+  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\ManufacturerController.test.js" time="0.0300" failures="0">
+    <testcase name="Accessories Controller get /manufacturer" time="0.0300" classname="get /manufacturer">
+    </testcase>
+  </testsuite>
+  <testsuite name="Segment Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\SegmentController.test.js" time="0.0320" failures="0">
+    <testcase name="Segment Controller get /segment" time="0.0320" classname="get /segment">
+    </testcase>
+  </testsuite>
+  <testsuite name="Accessories Controller" timestamp="2022-12-26T13:20:29" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\VarientController.test.js" time="0.0300" failures="0">
+    <testcase name="Accessories Controller get /variant" time="0.0300" classname="get /variant">
+    </testcase>
+  </testsuite>
+</testsuites>

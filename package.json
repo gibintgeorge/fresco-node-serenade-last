@@ -19,9 +19,7 @@
     "debug": "node debug app.js",
     "start": "node node_modules/sails/bin/sails.js lift --port 8000",
     "coverage": "istanbul cover --report clover _mocha test",
-    "pretest": "eslint ./test -o eslint.xml -f junit;exit 0;",
-    "test": "rm -rf ./unit.xml && CI=true; node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js --reporter mocha-junit-reporter",
-    "posttest": "npm run coverage && node xml_merge.js"
+    "test": "rm -rf ./unit.xml && node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js --reporter mocha-junit-reporter"
   },
   "main": "app.js",
   "repository": {
@@ -42,7 +40,7 @@
     "grunt-mocha-istanbul": "^5.0.2",
     "istanbul": "^0.4.5",
     "mocha": "^5.0.4",
-    "mocha-junit-reporter": "^1.17.0",
+    "mocha-junit-reporter": "^1.23.3",
     "nyc": "^11.6.0",
     "sails-memory": "^0.10.7",
     "should": "^13.2.1",
