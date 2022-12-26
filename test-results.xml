@@ -1,30 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.4820" tests="17" failures="2">
-  <testsuite name="Root Suite" timestamp="2022-12-26T19:26:28" tests="0" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="1.2680" tests="51" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-12-26T20:07:01" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2022-12-26T19:26:30" tests="9" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\AccessoriesController.test.js" time="0.2810" failures="0">
-    <testcase name="Accessories Controller post /accessories" time="0.0610" classname="post /accessories">
+  <testsuite name="Accessories Controller" timestamp="2022-12-26T20:07:04" tests="9" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\AccessoriesController.test.js" time="0.3020" failures="0">
+    <testcase name="Accessories Controller post /accessories" time="0.0720" classname="post /accessories">
     </testcase>
-    <testcase name="Accessories Controller get /accessories" time="0.0550" classname="get /accessories">
+    <testcase name="Accessories Controller get /accessories" time="0.0570" classname="get /accessories">
     </testcase>
-    <testcase name="Accessories Controller put /accessories" time="0.0270" classname="put /accessories">
+    <testcase name="Accessories Controller put /accessories" time="0.0400" classname="put /accessories">
     </testcase>
-    <testcase name="Accessories Controller put /accessories invalid" time="0.0090" classname="put /accessories invalid">
+    <testcase name="Accessories Controller put /accessories invalid" time="0.0170" classname="put /accessories invalid">
     </testcase>
-    <testcase name="Accessories Controller search /accessories" time="0.0220" classname="search /accessories">
+    <testcase name="Accessories Controller search /accessories" time="0.0270" classname="search /accessories">
     </testcase>
-    <testcase name="Accessories Controller delete /accessories" time="0.0470" classname="delete /accessories">
+    <testcase name="Accessories Controller delete /accessories" time="0.0310" classname="delete /accessories">
     </testcase>
-    <testcase name="Accessories Controller delete /accessories invalid id" time="0.0060" classname="delete /accessories invalid id">
+    <testcase name="Accessories Controller delete /accessories invalid id" time="0.0070" classname="delete /accessories invalid id">
     </testcase>
     <testcase name="Accessories Controller delete /accessories huge invalid id" time="0.0220" classname="delete /accessories huge invalid id">
     </testcase>
-    <testcase name="Accessories Controller deleteAll /accessories" time="0.0320" classname="deleteAll /accessories">
+    <testcase name="Accessories Controller deleteAll /accessories" time="0.0290" classname="deleteAll /accessories">
     </testcase>
   </testsuite>
-  <testsuite name="Car Controller" timestamp="2022-12-26T19:26:31" tests="4" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\CarsController.test.js" time="0.0820" failures="2">
-    <testcase name="Car Controller post /car" time="0.0330" classname="post /car">
-      <failure message="expected 200 &quot;OK&quot;, got 400 &quot;Bad Request&quot;" type="Error"><![CDATA[Error: expected 200 "OK", got 400 "Bad Request"
+  <testsuite name="Car Controller" timestamp="2022-12-26T20:07:04" tests="10" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\CarsController.test.js" time="0.2250" failures="0">
+    <testcase name="Car Controller post /car" time="0.0140" classname="post /car">
+    </testcase>
+    <testcase name="Car Controller get /car" time="0.0490" classname="get /car">
+    </testcase>
+    <testcase name="Car Controller put /cars invalid" time="0.0090" classname="put /cars invalid">
+    </testcase>
+    <testcase name="Car Controller put /cars valid" time="0.0190" classname="put /cars valid">
+    </testcase>
+    <testcase name="Car Controller search /car" time="0.0090" classname="search /car">
+    </testcase>
+    <testcase name="Car Controller search with param /car" time="0.0210" classname="search with param /car">
+    </testcase>
+    <testcase name="Car Controller delete /cars invalid" time="0.0080" classname="delete /cars invalid">
+    </testcase>
+    <testcase name="Car Controller delete all /cars invalid" time="0.0370" classname="delete all /cars invalid">
+    </testcase>
+    <testcase name="Car Controller post /car" time="0.0150" classname="post /car">
+    </testcase>
+    <testcase name="Car Controller delete /cars valid" time="0.0440" classname="delete /cars valid">
+    </testcase>
+  </testsuite>
+  <testsuite name="manufacturer Controller" timestamp="2022-12-26T20:07:05" tests="11" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\ManufacturerController.test.js" time="0.2400" failures="0">
+    <testcase name="manufacturer Controller post error /manufacturer" time="0.0180" classname="post error /manufacturer">
+    </testcase>
+    <testcase name="manufacturer Controller post /manufacturer" time="0.0120" classname="post /manufacturer">
+    </testcase>
+    <testcase name="manufacturer Controller get /manufacturer" time="0.0470" classname="get /manufacturer">
+    </testcase>
+    <testcase name="manufacturer Controller put /manufacturers invalid" time="0.0070" classname="put /manufacturers invalid">
+    </testcase>
+    <testcase name="manufacturer Controller put /manufacturers valid" time="0.0200" classname="put /manufacturers valid">
+    </testcase>
+    <testcase name="manufacturer Controller get /manu by id" time="0.0470" classname="get /manu by id">
+    </testcase>
+    <testcase name="manufacturer Controller delete /manufacturers invalid" time="0.0080" classname="delete /manufacturers invalid">
+    </testcase>
+    <testcase name="manufacturer Controller delete /manufacturers valid" time="0.0370" classname="delete /manufacturers valid">
+    </testcase>
+    <testcase name="manufacturer Controller delete /manufacturers valid" time="0.0150" classname="delete /manufacturers valid">
+    </testcase>
+    <testcase name="manufacturer Controller post /manufacturer" time="0.0150" classname="post /manufacturer">
+    </testcase>
+    <testcase name="manufacturer Controller delete all /manufacturers invalid" time="0.0140" classname="delete all /manufacturers invalid">
+    </testcase>
+  </testsuite>
+  <testsuite name="segment Controller" timestamp="2022-12-26T20:07:05" tests="10" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\SegmentController.test.js" time="0.1940" failures="0">
+    <testcase name="segment Controller post /segment" time="0.0160" classname="post /segment">
+    </testcase>
+    <testcase name="segment Controller get /segment" time="0.0460" classname="get /segment">
+    </testcase>
+    <testcase name="segment Controller put /segments invalid" time="0.0080" classname="put /segments invalid">
+    </testcase>
+    <testcase name="segment Controller put /segments valid" time="0.0210" classname="put /segments valid">
+    </testcase>
+    <testcase name="segment Controller get /manu by id" time="0.0300" classname="get /manu by id">
+    </testcase>
+    <testcase name="segment Controller delete /segments invalid" time="0.0070" classname="delete /segments invalid">
+    </testcase>
+    <testcase name="segment Controller delete /segments valid" time="0.0270" classname="delete /segments valid">
+    </testcase>
+    <testcase name="segment Controller delete /segments valid" time="0.0110" classname="delete /segments valid">
+    </testcase>
+    <testcase name="segment Controller post /segment" time="0.0140" classname="post /segment">
+    </testcase>
+    <testcase name="segment Controller delete all /segments invalid" time="0.0140" classname="delete all /segments invalid">
+    </testcase>
+  </testsuite>
+  <testsuite name="variant Controller" timestamp="2022-12-26T20:07:05" tests="11" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\VariantController.test.js" time="0.3070" failures="1">
+    <testcase name="variant Controller post error /variant" time="0.0160" classname="post error /variant">
+      <failure message="expected 400 &quot;Bad Request&quot;, got 200 &quot;OK&quot;" type="Error"><![CDATA[Error: expected 400 "Bad Request", got 200 "OK"
     at Test._assertStatus (node_modules\supertest\lib\test.js:268:12)
     at Test._assertFunction (node_modules\supertest\lib\test.js:283:11)
     at Test.assert (node_modules\supertest\lib\test.js:173:18)
@@ -35,42 +103,25 @@
     at emitCloseNT (node:net:1880:8)
     at process.processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
     </testcase>
-    <testcase name="Car Controller get /car" time="0.0420" classname="get /car">
+    <testcase name="variant Controller post /variant" time="0.0140" classname="post /variant">
     </testcase>
-    <testcase name="Car Controller put /cars invalid" time="0.0070" classname="put /cars invalid">
+    <testcase name="variant Controller get /variant" time="0.0640" classname="get /variant">
     </testcase>
-    <testcase name="Car Controller put /cars valid" time="0.0000" classname="put /cars valid">
-      <failure message="Cannot read properties of undefined (reading &apos;length&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'length')
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\api\controllers\CarsController.js:35:16
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\query\dql\update.js:224:23
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\async\lib\async.js:52:16
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\async\lib\async.js:570:21
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\async\lib\async.js:167:37
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\waterline\lib\waterline\model\lib\defaultMethods\save.js:188:14
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\async\lib\async.js:52:16
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\async\lib\async.js:550:17
-    at C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\node_modules\async\lib\async.js:544:17
-    at _arrayEach (node_modules\async\lib\async.js:85:13)
-    at Immediate.taskComplete (node_modules\async\lib\async.js:543:13)
-    at process.processImmediate (node:internal/timers:471:21)
-    at process.topLevelDomainCallback (node:domain:161:15)
-    at process.callbackTrampoline (node:internal/async_hooks:128:24)]]></failure>
+    <testcase name="variant Controller put /variants invalid" time="0.0070" classname="put /variants invalid">
     </testcase>
-  </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2022-12-26T19:26:31" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\ManufacturerController.test.js" time="0.0480" failures="0">
-    <testcase name="Accessories Controller get /manufacturer" time="0.0480" classname="get /manufacturer">
+    <testcase name="variant Controller put /variants valid" time="0.0210" classname="put /variants valid">
     </testcase>
-  </testsuite>
-  <testsuite name="Segment Controller" timestamp="2022-12-26T19:26:31" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\SegmentController.test.js" time="0.0440" failures="0">
-    <testcase name="Segment Controller get /segment" time="0.0440" classname="get /segment">
+    <testcase name="variant Controller get /manu by id" time="0.0630" classname="get /manu by id">
     </testcase>
-  </testsuite>
-  <testsuite name="Accessories Controller" timestamp="2022-12-26T19:26:31" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\controllers\VarientController.test.js" time="0.0130" failures="0">
-    <testcase name="Accessories Controller get /variant" time="0.0130" classname="get /variant">
+    <testcase name="variant Controller delete /variants invalid" time="0.0080" classname="delete /variants invalid">
     </testcase>
-  </testsuite>
-  <testsuite name="Cars" timestamp="2022-12-26T19:26:31" tests="1" file="C:\Users\gibintgeorge\Documents\fresco-node-serenade-last\test\models\Cars.test.js" time="0.0140" failures="0">
-    <testcase name="Cars should not be empty" time="0.0140" classname="should not be empty">
+    <testcase name="variant Controller delete /variants valid" time="0.0530" classname="delete /variants valid">
+    </testcase>
+    <testcase name="variant Controller delete /variants valid" time="0.0120" classname="delete /variants valid">
+    </testcase>
+    <testcase name="variant Controller post /variant" time="0.0180" classname="post /variant">
+    </testcase>
+    <testcase name="variant Controller delete all /variants invalid" time="0.0310" classname="delete all /variants invalid">
     </testcase>
   </testsuite>
 </testsuites>

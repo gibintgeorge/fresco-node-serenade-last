@@ -1,285 +1,47 @@
 {
   "data": {
-    "accessories": [
-      {
-        "name": "Car Bumper Safety Guard",
-        "price": 1000,
-        "createdAt": "2022-12-26T16:46:33.023Z",
-        "updatedAt": "2022-12-26T16:46:33.023Z",
-        "id": 93
-      },
-      {
-        "name": "Car DVR Camera",
-        "price": 788,
-        "createdAt": "2022-12-26T16:46:33.025Z",
-        "updatedAt": "2022-12-26T16:46:33.025Z",
-        "id": 94
-      },
-      {
-        "name": "Central Locking System",
-        "price": 442,
-        "createdAt": "2022-12-26T16:46:33.026Z",
-        "updatedAt": "2022-12-26T16:46:33.026Z",
-        "id": 95
-      },
-      {
-        "name": "Child Seat",
-        "price": 546,
-        "createdAt": "2022-12-26T16:46:33.028Z",
-        "updatedAt": "2022-12-26T16:46:33.028Z",
-        "id": 96
-      },
-      {
-        "name": "Driveway Mirror",
-        "price": 675,
-        "createdAt": "2022-12-26T16:46:33.029Z",
-        "updatedAt": "2022-12-26T16:46:33.029Z",
-        "id": 97
-      },
-      {
-        "name": "Fire Extinguishers",
-        "price": 234,
-        "createdAt": "2022-12-26T16:46:33.031Z",
-        "updatedAt": "2022-12-26T16:46:33.031Z",
-        "id": 98
-      },
-      {
-        "name": "Fog Lamp Kit",
-        "price": 667,
-        "createdAt": "2022-12-26T16:46:33.032Z",
-        "updatedAt": "2022-12-26T16:46:33.032Z",
-        "id": 99
-      },
-      {
-        "name": "Gear Lock",
-        "price": 867,
-        "createdAt": "2022-12-26T16:46:33.033Z",
-        "updatedAt": "2022-12-26T16:46:33.033Z",
-        "id": 100
-      },
-      {
-        "name": "GPS Navigators",
-        "price": 2456,
-        "createdAt": "2022-12-26T16:46:33.035Z",
-        "updatedAt": "2022-12-26T16:46:33.035Z",
-        "id": 101
-      },
-      {
-        "name": "Mirror Lock",
-        "price": 566,
-        "createdAt": "2022-12-26T16:46:33.036Z",
-        "updatedAt": "2022-12-26T16:46:33.036Z",
-        "id": 102
-      },
-      {
-        "name": "Non Slip Mat",
-        "price": 768,
-        "createdAt": "2022-12-26T16:46:33.037Z",
-        "updatedAt": "2022-12-26T16:46:33.037Z",
-        "id": 103
-      },
-      {
-        "name": "Parking Sensors",
-        "price": 2324,
-        "createdAt": "2022-12-26T16:46:33.038Z",
-        "updatedAt": "2022-12-26T16:46:33.038Z",
-        "id": 104
-      },
-      {
-        "name": "Pedal Jack Anti-Theft Device",
-        "price": 4545,
-        "createdAt": "2022-12-26T16:46:33.040Z",
-        "updatedAt": "2022-12-26T16:46:33.040Z",
-        "id": 105
-      },
-      {
-        "name": "Pet Door Shield",
-        "price": 552,
-        "createdAt": "2022-12-26T16:46:33.041Z",
-        "updatedAt": "2022-12-26T16:46:33.041Z",
-        "id": 106
-      },
-      {
-        "name": "Pet Pad Protectors",
-        "price": 56476,
-        "createdAt": "2022-12-26T16:46:33.042Z",
-        "updatedAt": "2022-12-26T16:46:33.042Z",
-        "id": 107
-      },
-      {
-        "name": "Remote Engine Starter",
-        "price": 675,
-        "createdAt": "2022-12-26T16:46:33.043Z",
-        "updatedAt": "2022-12-26T16:46:33.043Z",
-        "id": 108
-      },
-      {
-        "name": "Reverse Parking Camera",
-        "price": 532,
-        "createdAt": "2022-12-26T16:46:33.045Z",
-        "updatedAt": "2022-12-26T16:46:33.045Z",
-        "id": 109
-      },
-      {
-        "name": "Reversing Sensors",
-        "price": 2425,
-        "createdAt": "2022-12-26T16:46:33.046Z",
-        "updatedAt": "2022-12-26T16:46:33.046Z",
-        "id": 110
-      },
-      {
-        "name": "Seat belt Pad",
-        "price": 7575,
-        "createdAt": "2022-12-26T16:46:33.047Z",
-        "updatedAt": "2022-12-26T16:46:33.047Z",
-        "id": 111
-      },
-      {
-        "name": "Steering Grip Lock",
-        "price": 4665,
-        "createdAt": "2022-12-26T16:46:33.049Z",
-        "updatedAt": "2022-12-26T16:46:33.049Z",
-        "id": 112
-      },
-      {
-        "name": "Sun Shades",
-        "price": 644,
-        "createdAt": "2022-12-26T16:46:33.050Z",
-        "updatedAt": "2022-12-26T16:46:33.050Z",
-        "id": 113
-      },
-      {
-        "name": "Vision Mirror",
-        "price": 352,
-        "createdAt": "2022-12-26T16:46:33.051Z",
-        "updatedAt": "2022-12-26T16:46:33.051Z",
-        "id": 114
-      },
-      {
-        "name": "Visor Mount",
-        "price": 9768,
-        "createdAt": "2022-12-26T16:46:33.053Z",
-        "updatedAt": "2022-12-26T16:46:33.053Z",
-        "id": 115
-      }
-    ],
+    "accessories": [],
     "cars": [
       {
-        "name": "Tata Nexon",
+        "name": "REVETRQE  XE",
+        "type": "Diesel",
+        "capacity": "1497 cc",
+        "price": "6.99 Lakh",
+        "createdAt": "2022-12-26T19:32:31.461Z",
+        "updatedAt": "2022-12-26T19:32:31.461Z",
+        "id": 6
+      },
+      {
+        "name": "Honda City 1",
+        "segment": 4,
         "description": "This is a dummy text",
-        "createdAt": "2022-12-26T16:46:33.054Z",
-        "updatedAt": "2022-12-26T16:46:33.054Z",
-        "id": 4
+        "manufacturer": 3,
+        "createdAt": "2022-12-26T19:33:24.408Z",
+        "updatedAt": "2022-12-26T19:34:51.510Z",
+        "id": 7
       },
       {
         "name": "Honda City",
+        "segment": 4,
         "description": "This is a dummy text",
-        "createdAt": "2022-12-26T16:46:33.055Z",
-        "updatedAt": "2022-12-26T16:46:33.055Z",
-        "id": 5
+        "createdAt": "2022-12-26T19:33:41.506Z",
+        "updatedAt": "2022-12-26T19:33:41.506Z",
+        "id": 8
       }
     ],
-    "manufacturer": [
+    "manufacturer": [],
+    "segment": [],
+    "variant": [
       {
-        "name": "Tata",
-        "createdAt": "2022-12-26T16:46:33.056Z",
-        "updatedAt": "2022-12-26T16:46:33.056Z",
-        "id": 33
-      },
-      {
-        "name": "Hyundai",
-        "createdAt": "2022-12-26T16:46:33.058Z",
-        "updatedAt": "2022-12-26T16:46:33.058Z",
-        "id": 34
-      },
-      {
-        "name": "Honda",
-        "createdAt": "2022-12-26T16:46:33.059Z",
-        "updatedAt": "2022-12-26T16:46:33.059Z",
-        "id": 35
-      },
-      {
-        "name": "Toyota",
-        "createdAt": "2022-12-26T16:46:33.060Z",
-        "updatedAt": "2022-12-26T16:46:33.060Z",
-        "id": 36
-      },
-      {
-        "name": "Volkswagen",
-        "createdAt": "2022-12-26T16:46:33.062Z",
-        "updatedAt": "2022-12-26T16:46:33.062Z",
-        "id": 37
-      },
-      {
-        "name": "Skoda",
-        "createdAt": "2022-12-26T16:46:33.063Z",
-        "updatedAt": "2022-12-26T16:46:33.063Z",
-        "id": 38
-      },
-      {
-        "name": "Suzuki",
-        "createdAt": "2022-12-26T16:46:33.065Z",
-        "updatedAt": "2022-12-26T16:46:33.065Z",
-        "id": 39
-      },
-      {
-        "name": "Ford",
-        "createdAt": "2022-12-26T16:46:33.067Z",
-        "updatedAt": "2022-12-26T16:46:33.067Z",
-        "id": 40
+        "name": "REVETRQE  XE",
+        "type": "Diesel",
+        "capacity": 1497,
+        "price": 6,
+        "createdAt": "2022-12-26T19:32:14.991Z",
+        "updatedAt": "2022-12-26T19:32:14.991Z",
+        "id": 1
       }
     ],
-    "segment": [
-      {
-        "name": "SUV",
-        "createdAt": "2022-12-26T16:46:33.074Z",
-        "updatedAt": "2022-12-26T16:46:33.074Z",
-        "id": 33
-      },
-      {
-        "name": "Sedan",
-        "createdAt": "2022-12-26T16:46:33.076Z",
-        "updatedAt": "2022-12-26T16:46:33.076Z",
-        "id": 34
-      },
-      {
-        "name": "HatchBack",
-        "createdAt": "2022-12-26T16:46:33.077Z",
-        "updatedAt": "2022-12-26T16:46:33.077Z",
-        "id": 35
-      },
-      {
-        "name": "Luxury",
-        "createdAt": "2022-12-26T16:46:33.078Z",
-        "updatedAt": "2022-12-26T16:46:33.078Z",
-        "id": 36
-      },
-      {
-        "name": "MPV",
-        "createdAt": "2022-12-26T16:46:33.080Z",
-        "updatedAt": "2022-12-26T16:46:33.080Z",
-        "id": 37
-      },
-      {
-        "name": "Crossover",
-        "createdAt": "2022-12-26T16:46:33.081Z",
-        "updatedAt": "2022-12-26T16:46:33.081Z",
-        "id": 38
-      },
-      {
-        "name": "Coupe",
-        "createdAt": "2022-12-26T16:46:33.082Z",
-        "updatedAt": "2022-12-26T16:46:33.082Z",
-        "id": 39
-      },
-      {
-        "name": "Convertible",
-        "createdAt": "2022-12-26T16:46:33.084Z",
-        "updatedAt": "2022-12-26T16:46:33.084Z",
-        "id": 40
-      }
-    ],
-    "variant": [],
     "accessories_cars__cars_accessories": [],
     "cars_variants__variant_cars": []
   },
@@ -455,7 +217,7 @@
       "id": 115
     },
     "cars": {
-      "id": 5
+      "id": 8
     },
     "manufacturer": {
       "id": 40
@@ -463,7 +225,9 @@
     "segment": {
       "id": 40
     },
-    "variant": {},
+    "variant": {
+      "id": 1
+    },
     "accessories_cars__cars_accessories": {},
     "cars_variants__variant_cars": {}
   }

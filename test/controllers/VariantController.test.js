@@ -2,17 +2,13 @@ var supertest = require("supertest");
 
 require("../bootstrap.test");
 
-var cars = require("../fixtures/cars.json");
-
-describe("Car Controller", function () {
-  it("post /car", function (done) {
+describe("variant Controller", function () {
+  it("post /variant", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .post("/car")
+      .post("/variant")
       .send({
-        name: "Honda City 1",
-        segment: 4,
-        description: "This is a dummy text",
+        name: "Tata Sons",
       })
       .expect(200)
       .end(function (err, result) {
@@ -23,10 +19,10 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("get /car", function (done) {
+  it("get /variant", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .get("/car")
+      .get("/variant")
       .send()
       .expect(200)
       .end(function (err, result) {
@@ -38,11 +34,11 @@ describe("Car Controller", function () {
       });
   });
 
-  it("put /cars invalid", function (done) {
+  it("put /variants invalid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .put("/car/ids")
-      .send(cars[0])
+      .put("/variant/ids")
+      .send({ name: "abc" })
       .expect(400)
       .end(function (err, result) {
         if (err) {
@@ -52,14 +48,12 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("put /cars valid", function (done) {
+  it("put /variants valid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .put(`/car/1`)
+      .put(`/variant/1`)
       .send({
-        name: "Honda City",
-        segment: 4,
-        description: "This is a dummy text for honda",
+        name: "Bajaj",
       })
       .expect(200)
       .end(function (err, result) {
@@ -70,10 +64,10 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("search /car", function (done) {
+  it("get /manu by id", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .get("/car/search")
+      .get("/variant/1")
       .send()
       .expect(200)
       .end(function (err, result) {
@@ -84,10 +78,39 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("search with param /car", function (done) {
+
+  it("delete /variants invalid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .get("/car/search?limit=1&skip=5&sort=price&where1=1")
+      .delete("/variant/ids")
+      .send()
+      .expect(400)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+  it("delete /variants valid", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete(`/variant/1`)
+      .send()
+      .expect(200)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+  it("delete /variants valid", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete(`/variant/1`)
       .send()
       .expect(404)
       .end(function (err, result) {
@@ -98,42 +121,12 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("delete /cars invalid", function (done) {
+  it("post /variant", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete("/car/ids")
-      .send()
-      .expect(400)
-      .end(function (err, result) {
-        if (err) {
-          done(err);
-        } else {
-          done();
-        }
-      });
-  });
-  it("delete all /cars invalid", function (done) {
-    var agent = supertest.agent(sails.hooks.http.app);
-    agent
-      .delete("/car")
-      .send()
-      .expect(200)
-      .end(function (err, result) {
-        if (err) {
-          done(err);
-        } else {
-          done();
-        }
-      });
-  });
-  it("post /car", function (done) {
-    var agent = supertest.agent(sails.hooks.http.app);
-    agent
-      .post("/car")
+      .post("/variant")
       .send({
-        name: "Honda City 1",
-        segment: 4,
-        description: "This is a dummy text",
+        name: "Tata Sons2",
       })
       .expect(200)
       .end(function (err, result) {
@@ -144,10 +137,10 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("delete /cars valid", function (done) {
+  it("delete all /variants invalid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete(`/car/2`)
+      .delete("/variant")
       .send()
       .expect(200)
       .end(function (err, result) {
