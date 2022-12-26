@@ -17,6 +17,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-indent-props": "off",
     "indent": "off",
+    "spaced-comment": "off",
     "react/jsx-indent": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "no-tabs": 0,
@@ -26,7 +27,6 @@
     "react/prefer-stateless-function": "off",
     "no-mixed-spaces-and-tabs": "off",
     "react/no-unused-state": "off",
-    "linebreak-style": ["error", "unix"],
     "quotes": "off",
     "semi": "off",
     "no-undef": "off",
@@ -49,6 +49,7 @@
     "padded-blocks": "off",
     "no-else-return": "off",
     "no-console": "off",
-    "semi-spacing": "off"
+    "semi-spacing": "off",
+    "linebreak-style": "off"
   }
 }
