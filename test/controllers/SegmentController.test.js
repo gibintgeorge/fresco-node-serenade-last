@@ -64,12 +64,41 @@ describe("segment Controller", function () {
         }
       });
   });
-  it("get /manu by id", function (done) {
+  it("get /seg by id", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .get("/segment/1")
       .send()
       .expect(200)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+
+  it("get /seg invalid by id", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get("/segment/9991")
+      .send()
+      .expect(404)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+  it("get /seg invalid by id", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get("/segment/ASD")
+      .send()
+      .expect(400)
       .end(function (err, result) {
         if (err) {
           done(err);

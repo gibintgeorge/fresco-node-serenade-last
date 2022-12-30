@@ -7,21 +7,43 @@ var cars = require("../fixtures/cars.json");
 describe("Car Controller", function () {
   it("post /car", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
-    agent
-      .post("/car")
-      .send({
-        name: "Honda City 1",
-        segment: 4,
-        description: "This is a dummy text",
-      })
-      .expect(200)
-      .end(function (err, result) {
-        if (err) {
-          done(err);
-        } else {
-          done();
-        }
+    Segment.create({ name: "segment" }).exec(function (err, segment) {
+      if (err) return next(err);
+      Manufacturer.create({ name: "manu" }).exec(function (err, manufacturer) {
+        if (err) return next(err);
+        const data = {
+          name: "Honda City 1",
+          segment: segment.id,
+          description: "This is a dummy text",
+          manufacturer: manufacturer.id,
+        };
+        agent
+          .post("/car")
+          .send(data)
+          .expect(200)
+          .end(function (err, result) {
+            if (err) {
+              done(err);
+            } else {
+              agent
+                .put(`/car/${result.body.id}`)
+                .send({
+                  name: "Honda City",
+                  segment: 4,
+                  description: "This is a dummy text for honda",
+                })
+                .expect(200)
+                .end(function (err, result) {
+                  if (err) {
+                    done(err);
+                  } else {
+                    done();
+                  }
+                });
+            }
+          });
       });
+    });
   });
   it("get /car", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
@@ -52,24 +74,7 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("put /cars valid", function (done) {
-    var agent = supertest.agent(sails.hooks.http.app);
-    agent
-      .put(`/car/1`)
-      .send({
-        name: "Honda City",
-        segment: 4,
-        description: "This is a dummy text for honda",
-      })
-      .expect(200)
-      .end(function (err, result) {
-        if (err) {
-          done(err);
-        } else {
-          done();
-        }
-      });
-  });
+
   it("search /car", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
@@ -87,7 +92,7 @@ describe("Car Controller", function () {
   it("search with param /car", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .get("/car/search?limit=1&skip=5&sort=price&where1=1")
+      .get(`/car/search?limit=1&skip=5&sort=price&where={"id":{">=":"2000"}}`)
       .send()
       .expect(404)
       .end(function (err, result) {
@@ -98,6 +103,7 @@ describe("Car Controller", function () {
         }
       });
   });
+
   it("delete /cars invalid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
@@ -112,10 +118,11 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("delete all /cars invalid", function (done) {
+
+  it("delete /cars valid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete("/car")
+      .delete("/car/1")
       .send()
       .expect(200)
       .end(function (err, result) {
@@ -126,16 +133,12 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("post /car", function (done) {
+  it("delete /cars huge invalid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .post("/car")
-      .send({
-        name: "Honda City 1",
-        segment: 4,
-        description: "This is a dummy text",
-      })
-      .expect(200)
+      .delete("/car/991")
+      .send()
+      .expect(404)
       .end(function (err, result) {
         if (err) {
           done(err);
@@ -144,10 +147,10 @@ describe("Car Controller", function () {
         }
       });
   });
-  it("delete /cars valid", function (done) {
+  it("delete all /cars invalid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete(`/car/2`)
+      .delete("/car")
       .send()
       .expect(200)
       .end(function (err, result) {

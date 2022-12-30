@@ -19,6 +19,22 @@ describe("variant Controller", function () {
         }
       });
   });
+  it("post /variant", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .post("/variant")
+      .send({
+        name: null,
+      })
+      .expect(400)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
   it("get /variant", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
@@ -78,13 +94,56 @@ describe("variant Controller", function () {
         }
       });
   });
-
+  it("search /variant", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get("/variant/search")
+      .send()
+      .expect(200)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+  it("search with param /variant", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get(
+        `/variant/search?limit=1&skip=5&sort=price&where={"capacity":{">=":"2000"}}`
+      )
+      .send()
+      .expect(404)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
   it("delete /variants invalid", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .delete("/variant/ids")
       .send()
       .expect(400)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+  it("delete /variants valid", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete(`/variant/1000`)
+      .send()
+      .expect(404)
       .end(function (err, result) {
         if (err) {
           done(err);

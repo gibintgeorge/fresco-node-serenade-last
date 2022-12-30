@@ -1,3 +1,4 @@
+/* eslint-disable function-paren-newline */
 var supertest = require("supertest");
 require("../bootstrap.test");
 
@@ -63,9 +64,41 @@ describe("Accessories Controller", function () {
   it("search /accessories", function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .get("/accessories/search?limit=1&skip=5&sort=price&where1=1")
+      .get("/accessories/search")
       .send()
       .expect(200)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+  it("search with param /accessories", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get(
+        `/accessories/search?limit=1&skip=5&sort=price&where={"price":{">=":"2000"}}`
+      )
+      .send()
+      .expect(200)
+      .end(function (err, result) {
+        if (err) {
+          done(err);
+        } else {
+          done();
+        }
+      });
+  });
+  it("search with param /accessories", function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .get(
+        `/accessories/search?limit=1&skip=5&sort=price&where={"price":{">=":"200000"}}`
+      )
+      .send()
+      .expect(404)
       .end(function (err, result) {
         if (err) {
           done(err);
